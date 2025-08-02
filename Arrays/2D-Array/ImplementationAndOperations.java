@@ -23,12 +23,13 @@ public class ImplementationAndOperations {
                 arr[i][j] = sc.nextInt();
             }
         }
-        
+
         System.out.println("Printing 2D array");
         print2DArray(arr, arr.length, arr[0].length);
 
         System.out.println("Printing column wise 2D array");
         ColumnWisePrint(arr, arr.length, arr[0].length);
+        
     }
 
     public static void print2DArray(int arr[][], int r, int c) {
@@ -48,4 +49,5 @@ public class ImplementationAndOperations {
             System.out.println();
         }
     }
+   
 }

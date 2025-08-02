@@ -5,7 +5,7 @@ public class RowwiseSum {
                 { 2, 1, 2 },
                 { 3, 3, 3 }
         };
-        DiagonalPrint(arr, arr.length, arr[0].length);
+        Diagonally(arr, arr.length, arr[0].length);
     }
 
     public static void sum(int arr[][], int r, int c) {
@@ -18,19 +18,23 @@ public class RowwiseSum {
         }
     }
 
-    public static void DiagonalPrint(int arr[][], int n, int c) {
+    public static void Diagonally(int arr[][], int n, int c) {
         int sum = 0;
         for (int r = 0; r < n; r++) {
-            
-                System.out.print(arr[r][n-1-r] + " ");
-                sum = sum+ arr[r][n-1-r];
-                
-            }
-            System.out.println("sum: "+sum);
-            
+            System.out.print(arr[r][n - r - 1] + " ");
+            sum = sum + arr[r][n - 1 - r];
         }
-        
+        System.out.println("sum: " + sum);
+
     }
 
+    public static void OppositeDiagonally(int arr[][], int n, int c) {
+        int sum = 0;
+        for (int r = n - 1; r >= 0; r--) {
+            System.out.print(arr[r][n - 1 - r] + " ");
+            sum = sum + arr[r][n - 1 - r];
+        }
+        System.out.println("sum: " + sum);
 
-
+    }
+}
