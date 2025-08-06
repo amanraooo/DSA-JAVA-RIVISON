@@ -4,13 +4,10 @@ public class CommonElementsInArray {
         int arr2[] = { 6, 7, 20, 80, 100 };
         int arr3[] = { 3, 4, 15, 20, 30, 70, 80, 120 };
 
-        int[] result = FindInThreeArrays(arr1, arr2, arr3, arr1.length, arr2.length, arr3.length);
+        int[] result = FindInThreeArrays(arr1, arr2, arr3, arr1.length, arr2.length,
+        arr3.length);
 
-        for (int num : result) {
-            if (num != 0) {
-                System.out.print(num + " ");
-            }
-        }
+        
 
     }
 
@@ -39,4 +36,6 @@ public class CommonElementsInArray {
         return ans;
 
     }
+
+    
 }
