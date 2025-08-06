@@ -1,10 +1,23 @@
 public class WavePrint {
     public static void main(String[] args) {
         int arr[][] = { { 1, 2, 3, 4 },
-                { 5, 6, 7, 8 },
-                { 9, 10, 11, 12 }
+                        { 5, 6, 7, 8 },
+                        { 9, 10, 11, 12 }
         };
-        printRowWise(arr);
+        test(arr);
+    }
+
+    public static void test(int mat[][]) {
+        
+
+        for(int c = 0; c< mat[0].length; c++){
+            for (int r = 0; r < mat.length; r++) {
+                System.out.print(mat[r][c]+ " ");
+            }
+            System.out.println();
+
+        }
+
     }
 
     public static void printColWise(int arr[][]) {

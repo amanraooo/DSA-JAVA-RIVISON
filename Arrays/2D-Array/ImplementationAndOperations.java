@@ -2,27 +2,29 @@ import java.util.Scanner;
 
 public class ImplementationAndOperations {
     public static void main(String[] args) {
-        // int arr[][] = {
-        // { 1, 2, 3, 4 },
-        // { 5, 6, 7, 8 },
-        // { 9, 10, 11, 12 }
-        // };
-        Scanner sc = new Scanner(System.in);
+        int arr[][] = {
+        { 1, 2, 3, 4 },
+        { 5, 6, 7, 8 },
+        { 9, 10, 11, 12 }
+        };
 
-        System.out.println("Decide number of rows: ");
-        int r = sc.nextInt();
+       
+        // Scanner sc = new Scanner(System.in);
 
-        System.out.println("Decide number of columns: ");
-        int c = sc.nextInt();
+        // System.out.println("Decide number of rows: ");
+        // int r = sc.nextInt();
 
-        int arr[][] = new int[r][c];
+        // System.out.println("Decide number of columns: ");
+        // int c = sc.nextInt();
 
-        for (int i = 0; i < r; i++) {
-            for (int j = 0; j < c; j++) {
-                System.out.println("Enter the input for row " + i + " and input for column " + j);
-                arr[i][j] = sc.nextInt();
-            }
-        }
+        // int arr[][] = new int[r][c];
+
+        // for (int i = 0; i < r; i++) {
+        //     for (int j = 0; j < c; j++) {
+        //         System.out.println("Enter the input for row " + i + " and input for column " + j);
+        //         arr[i][j] = sc.nextInt();
+        //     }
+        // }
 
         System.out.println("Printing 2D array");
         print2DArray(arr, arr.length, arr[0].length);
