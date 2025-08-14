@@ -6,12 +6,14 @@ public class PrintPairs {
 
     // print array elements in pairs
     public static void pairs(int arr[], int size) {
+            
 
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 System.out.println("(" + arr[i] + ", " + arr[j] + ")");
+      
             }
-        }
+                   }
 
     }
 }
