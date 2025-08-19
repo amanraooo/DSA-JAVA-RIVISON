@@ -3,7 +3,7 @@ public class SwappingTypes {
         int a = 2, b = 5;
         // System.out.println("Before: "+ a+ " "+ b);
 
-        //swap1(a, b);
+        // swap1(a, b);
         // System.out.println("After: "+ a+ " "+ b);
         swap3(a, b);
 
@@ -29,7 +29,7 @@ public class SwappingTypes {
 
     }
 
-    //using XOR method
+    // using XOR method
     public static void swap3(int a, int b) {
         System.out.println("Before: " + a + " " + b);
         a = a ^ b;
