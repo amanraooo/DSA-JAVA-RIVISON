@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class ImplementationAndOperations {
     public static void main(String[] args) {
         // int arr[][] = {
-        //         { 1, 2, 3, 4 },
-        //         { 5, 6, 7, 8 },
-        //         { 9, 10, 11, 12 }
+        // { 1, 2, 3, 4 },
+        // { 5, 6, 7, 8 },
+        // { 9, 10, 11, 12 }
         // };
         int arr[][] = {
                 { 1, 2, 3 },
@@ -40,7 +40,7 @@ public class ImplementationAndOperations {
         System.out.println("diagonally print ");
         diagonallyPrint(arr, arr.length, arr[0].length);
 
-         System.out.println("Printing 2D array");
+        System.out.println("Printing 2D array");
         print2DArray(arr, arr.length, arr[0].length);
 
     }
@@ -66,7 +66,7 @@ public class ImplementationAndOperations {
     // 1 loop
     public static void diagonallyPrint(int arr[][], int r, int c) {
         int i = 0;
-        for (int j = c - 1; j >= 0 ; j--) {
+        for (int j = c - 1; j >= 0; j--) {
             System.out.println(arr[i++][j]);
         }
 
