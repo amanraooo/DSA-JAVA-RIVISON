@@ -2,13 +2,17 @@ import java.util.Scanner;
 
 public class ImplementationAndOperations {
     public static void main(String[] args) {
+        // int arr[][] = {
+        //         { 1, 2, 3, 4 },
+        //         { 5, 6, 7, 8 },
+        //         { 9, 10, 11, 12 }
+        // };
         int arr[][] = {
-        { 1, 2, 3, 4 },
-        { 5, 6, 7, 8 },
-        { 9, 10, 11, 12 }
+                { 1, 2, 3 },
+                { 4, 5, 6 },
+                { 7, 8, 9 }
         };
 
-       
         // Scanner sc = new Scanner(System.in);
 
         // System.out.println("Decide number of rows: ");
@@ -20,18 +24,25 @@ public class ImplementationAndOperations {
         // int arr[][] = new int[r][c];
 
         // for (int i = 0; i < r; i++) {
-        //     for (int j = 0; j < c; j++) {
-        //         System.out.println("Enter the input for row " + i + " and input for column " + j);
-        //         arr[i][j] = sc.nextInt();
-        //     }
+        // for (int j = 0; j < c; j++) {
+        // System.out.println("Enter the input for row " + i + " and input for column "
+        // + j);
+        // arr[i][j] = sc.nextInt();
+        // }
         // }
 
         System.out.println("Printing 2D array");
         print2DArray(arr, arr.length, arr[0].length);
 
-        System.out.println("Printing column wise 2D array");
-        ColumnWisePrint(arr, arr.length, arr[0].length);
-        
+        // System.out.println("Printing column wise 2D array");
+        // ColumnWisePrint(arr, arr.length, arr[0].length);
+
+        System.out.println("diagonally print ");
+        diagonallyPrint(arr, arr.length, arr[0].length);
+
+         System.out.println("Printing 2D array");
+        print2DArray(arr, arr.length, arr[0].length);
+
     }
 
     public static void print2DArray(int arr[][], int r, int c) {
@@ -51,5 +62,13 @@ public class ImplementationAndOperations {
             System.out.println();
         }
     }
-   
+
+    // 1 loop
+    public static void diagonallyPrint(int arr[][], int r, int c) {
+        int i = 0;
+        for (int j = c - 1; j >= 0 ; j--) {
+            System.out.println(arr[i++][j]);
+        }
+
+    }
 }
