@@ -1,11 +1,11 @@
 public class FindTargetInRotatedSortedArr {
     public static void main(String[] args) {
         int arr[]={4,5,6,7,0,1,2};
-        System.out.println(search(arr, 0));
+        System.out.println(search(arr, 5));
     }
     public static int search(int arr[], int target){
         int pivot = findPivot(arr);
-        if(arr[0]<=target && target <=arr[pivot]){
+        if(target >= arr[0] && target <=arr[pivot]){
            return BS(arr, target,0,pivot );
         }
         else{
