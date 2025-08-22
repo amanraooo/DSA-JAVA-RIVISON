@@ -1,7 +1,12 @@
 public class RemoveDuplicatesFromSortedArray {
     public static void main(String[] args) {
         int nums[] = { 0, 0, 1, 1, 1, 2, 2, 3, 3, 3, 4, 4 };
-        System.out.println(result(nums));
+        //System.out.println(result(nums));
+        int k = result(nums);
+
+        for (int i = 0; i < k; i++) {
+            System.out.print(nums[i] + " ");
+        }
     }
 
     public static int result(int nums[]) {
@@ -19,6 +24,8 @@ public class RemoveDuplicatesFromSortedArray {
             }
         }
         return unique + 1;
+
+        
 
     }
 }
