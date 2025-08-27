@@ -1,6 +1,14 @@
 public class DivisonUsingBS {
     public static void main(String[] args) {
-        System.out.println("Result: " + find(7, 31));
+        int Divisor = 7;
+        int Dividend = -31;
+
+        int ans = find(Math.abs(Divisor), Math.abs(Dividend));
+        
+        if ((Divisor > 0 && Dividend < 0) || (Divisor < 0 && Dividend > 0)) {
+            ans = 0 - ans;
+        }
+        System.out.println("Ans: " + ans);
     }
 
     public static int find(int Divisor, int Dividend) {
@@ -20,6 +28,7 @@ public class DivisonUsingBS {
                 s = mid + 1;
             }
         }
+
         return ans;
     }
 }
