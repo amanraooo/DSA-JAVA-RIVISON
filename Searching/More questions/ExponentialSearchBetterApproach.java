@@ -3,12 +3,13 @@ public class ExponentialSearchBetterApproach {
         int arr[] = { 3, 4, 5, 6, 11, 13, 14, 15, 56, 70 }, x = 11;
         System.out.println(search(arr, x));
     }
-    public static int search(int arr[], int x){
+
+    public static int search(int arr[], int x) {
         int i = 0;
         int j = 1;
-         int n = arr.length;
+        int n = arr.length;
 
-        while(j<n && arr[j]<=x){
+        while (j < n && arr[j] <= x) {
             i = j;
             j = j * 2;
         }
