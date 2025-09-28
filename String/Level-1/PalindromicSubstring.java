@@ -1,17 +1,17 @@
 
 public class PalindromicSubstring {
     public static void main(String[] args) {
-        String str= "nitin";
+        String str = "nitin";
         palinsubstring(str);
     }
-    public static void palinsubstring(String str){
+
+    public static void palinsubstring(String str) {
         for (int i = 0; i <= str.length(); i++) {
-            for (int j = i+1; j <= str.length(); j++) {
-            String ss = str.substring(i,j);
-            if (isPalindrome(ss)) {
-                 System.out.print(ss + " , ");
-            }
-           
+            for (int j = i + 1; j <= str.length(); j++) {
+                String ss = str.substring(i, j);
+                if (isPalindrome(ss)) {
+                    System.out.print(ss + " , ");
+                }
             }
         }
     }
