@@ -25,7 +25,7 @@ public class Valid_Palindrome_II {
         return true;
     }
 
-    private static boolean checkpalindrome(String str, int i, int j) {
+    public static boolean checkpalindrome(String str, int i, int j) {
         while (i <= j) {
             if (str.charAt(i) != str.charAt(j)) {
                 return false;
