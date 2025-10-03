@@ -19,6 +19,7 @@ public class DecodeTheMessage {
             }
         }
 
+        // using the mapping
         StringBuilder ans = new StringBuilder();
 
         for (int i = 0; i < Message.length(); i++) {
