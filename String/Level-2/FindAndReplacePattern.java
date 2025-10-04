@@ -21,7 +21,6 @@ public class FindAndReplacePattern {
         }
 
         // update the og string with mapping chars
-
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
             s.setCharAt(i, mapping[ch]);
@@ -31,14 +30,16 @@ public class FindAndReplacePattern {
 
     public static List<String> findAndReplacePattern(String[] words, String pattern) {
         List<String> ans = new ArrayList<>();
+
         // firstly normalise the pattern
         StringBuilder Pattern = new StringBuilder(pattern);
         createAndUpdateMapping(Pattern);
         pattern = Pattern.toString();
 
-        // sarre words k saath khelne h
+        // sarre words ko normalise krna h
         for (String word : words) {
             StringBuilder tempString = new StringBuilder(word);
+            
             // normalise tempString
             createAndUpdateMapping(tempString);
             if (tempString.toString().equals(pattern)) {
