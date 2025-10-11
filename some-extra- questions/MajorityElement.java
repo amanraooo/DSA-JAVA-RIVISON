@@ -25,23 +25,20 @@ public class MajorityElement {
         return -1;
     }
 
-    //optimized approach than brute force O(nlogn)
+    // optimized approach than brute force O(nlogn)
     public static int MJ2(int arr[]) {
         Arrays.sort(arr);
         int n = arr.length;
         int count = 1;
-        int ans = arr[0];
 
         for (int i = 1; i < n; i++) {
             if (arr[i] == arr[i - 1]) {
                 count++;
+                if (count > n / 2) {
+                    return arr[i];
+                }
             } else {
                 count = 1;
-                ans = arr[i];
-            }
-
-            if (count > n / 2) {
-                return ans;
             }
         }
         return -1;
