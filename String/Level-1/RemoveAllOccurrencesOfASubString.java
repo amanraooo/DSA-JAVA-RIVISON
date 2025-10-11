@@ -8,6 +8,7 @@ public class RemoveAllOccurrencesOfASubString {
     public static String removeOccurrences(String s, String part) {
         while (s.contains(part)) {
             s = s.replaceFirst(part, "");
+            System.out.println(s);
         }
         return s;
     }
