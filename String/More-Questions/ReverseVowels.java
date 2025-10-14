@@ -9,32 +9,33 @@ public class ReverseVowels {
         System.out.println(revVowels(s2));
         System.out.println(revVowels(s3));
     }
-    public static boolean isVowel(char ch){
+
+    public static boolean isVowel(char ch) {
         ch = Character.toLowerCase(ch);
-        return ch =='a' || ch =='i' ||ch =='e' ||ch =='o' ||ch =='u';
+        return ch == 'a' || ch == 'i' || ch == 'e' || ch == 'o' || ch == 'u';
     }
 
-    public static String revVowels(String s){
+    public static String revVowels(String s) {
         char characters[] = s.toCharArray();
-        int l =0;
-        int h = s.length()-1;
+        int l = 0;
+        int h = s.length() - 1;
 
-        while (l<h) {
-            if(isVowel(characters[l]) && isVowel(characters[h])){
+        while (l < h) {
+            if (isVowel(characters[l]) && isVowel(characters[h])) {
                 char temp = characters[l];
                 characters[l] = characters[h];
                 characters[h] = temp;
 
                 l++;
                 h--;
-            }
-            else if(!isVowel(characters[l])){
+            } 
+            else if (!isVowel(characters[l])) {
                 l++;
-            }
-            else{
+            } 
+            else {
                 h--;
             }
         }
         return String.valueOf(characters);
-    } 
+    }
 }
