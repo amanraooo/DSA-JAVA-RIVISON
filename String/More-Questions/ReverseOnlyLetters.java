@@ -9,23 +9,24 @@ public class ReverseOnlyLetters {
         System.out.println(revOnlyLetters(s2));
         System.out.println(revOnlyLetters(s3));
     }
-    public static String revOnlyLetters(String s){
+
+    public static String revOnlyLetters(String s) {
         int l = 0;
-        int h  = s.length()-1;
+        int h = s.length() - 1;
         char charArr[] = s.toCharArray();
 
-        while(l<h){
-            if(Character.isAlphabetic(charArr[l]) && Character.isAlphabetic(charArr[h])){
+        while (l < h) {
+            if (Character.isAlphabetic(charArr[l]) && Character.isAlphabetic(charArr[h])) {
                 char temp = charArr[l];
                 charArr[l] = charArr[h];
                 charArr[h] = temp;
-                l++; 
-                h--;
-            }
-            else if(!Character.isAlphabetic(charArr[l])){
                 l++;
-            }
-            else{
+                h--;
+            } 
+            else if (!Character.isAlphabetic(charArr[l])) {
+                l++;
+            } 
+            else {
                 h--;
             }
         }
