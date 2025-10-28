@@ -1,8 +1,8 @@
 public class CompressString {
     public static void main(String[] args) {
-  char chars1[] = {'a', 'a', 'b', 'b', 'c', 'c', 'c'};
+        char chars1[] = { 'a', 'a', 'b', 'b', 'c', 'c', 'c' };
         System.out.println(compress(chars1));
-        char chars2[] = {'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b'};
+        char chars2[] = { 'a', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b', 'b' };
         System.out.println(compress(chars2));
     }
 
@@ -33,17 +33,17 @@ public class CompressString {
         chars[index++] = prev;
         if (count > 1) {
             int start = index;
-                    while (count > 0) {
-                        int digit = count % 10;
-                        chars[index++] = (char) (digit + '0');
-                        count /= 10;
-                    }
-                    reverse(chars, start, index - 1);
+            while (count > 0) {
+                int digit = count % 10;
+                chars[index++] = (char) (digit + '0');
+                count /= 10;
+            }
+            reverse(chars, start, index - 1);
         }
         return index;
     }
 
-     public static void reverse(char chars[], int start, int end) {
+    public static void reverse(char chars[], int start, int end) {
         while (start < end) {
             char temp = chars[start];
             chars[start] = chars[end];
