@@ -4,8 +4,6 @@ public class TwoSum {
         int arr[] ={2,6,7,8,10};
         int target = 33;
         System.out.println(Tsum(arr,target));
-        
-
 
     }
     public static boolean Tsum(int arr[], int target){
@@ -21,9 +19,8 @@ public class TwoSum {
 
         else if (sum < target) l++;
 
-
             }
             return false;
-        }
+        }  
     }
-
+    
