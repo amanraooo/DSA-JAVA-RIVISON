@@ -12,8 +12,8 @@ public class InsertAndShiftRight {
             ans[i] = arr[i];
         }
         ans[x] = num;
-        for (int i = x + 1; i < ans.length; i++) {
-            ans[i] = arr[i - 1];
+        for (int i = x; i < arr.length; i++) {
+            ans[i + 1] = arr[i];
         }
         display(ans);
 
@@ -21,7 +21,7 @@ public class InsertAndShiftRight {
 
     public static void display(int arr[]) {
         for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i] + " ");
+            System.out.print(arr[i] + " ");
         }
     }
 }
