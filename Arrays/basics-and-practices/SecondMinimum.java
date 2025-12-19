@@ -10,7 +10,7 @@ public class SecondMinimum {
     public static int secondMin(int arr[]) {
         if (arr.length < 2) {
             System.out.println("Second Min not possible");
-            return Integer.MAX_VALUE;
+            return -1;
         }
         int min = Integer.MAX_VALUE;
         for (int i = 0; i < arr.length; i++) {
