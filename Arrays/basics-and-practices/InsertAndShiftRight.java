@@ -2,7 +2,7 @@ public class InsertAndShiftRight {
     public static void main(String[] args) {
         int arr[] = { 10, 20, 30, 40 };
         insertAndRightShift(arr, 2, 25);
-        // display(arr);
+        
     }
 
     public static void insertAndRightShift(int arr[], int x, int num) {
