@@ -1,16 +1,17 @@
 public class ReverseString {
     public static void main(String[] args) {
-        char s[] = {'h','e','l','l','o'};
+        char s[] = { 'h', 'e', 'l', 'l', 'o' };
         reverse(s);
     }
-    public static void reverse(char[] s){
-        int l = 0;
-        int h = s.length-1;
 
-        while (l<=h) {
+    public static void reverse(char[] s) {
+        int l = 0;
+        int h = s.length - 1;
+
+        while (l <= h) {
             char temp = s[l];
             s[l] = s[h];
-            s[h] =temp;
+            s[h] = temp;
             l++;
             h--;
 
@@ -19,9 +20,9 @@ public class ReverseString {
 
     }
 
-    public static void display(char[] s){
+    public static void display(char[] s) {
         for (int index = 0; index < s.length; index++) {
-            System.out.print("'"+ s[index]+ "'" +  ", ");
+            System.out.print("'" + s[index] + "'" + ", ");
         }
     }
 }
