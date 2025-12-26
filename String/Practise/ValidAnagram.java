@@ -8,12 +8,12 @@ public class ValidAnagram {
         System.out.println(isAnagram(s, t));
         System.out.println(isAnagram(s2, t2));
         System.out.println(isAnagram(s3, t3));
-        
 
     }
-    public static boolean isAnagram(String s, String t){
-        char freq [] = new char[256];
-        if(s.length()!=t.length()){
+
+    public static boolean isAnagram(String s, String t) {
+        char freq[] = new char[256];
+        if (s.length() != t.length()) {
             return false;
         }
 
@@ -25,7 +25,7 @@ public class ValidAnagram {
         }
 
         for (int index = 0; index < 256; index++) {
-            if(freq[index]!=0){
+            if (freq[index] != 0) {
                 return false;
             }
         }
