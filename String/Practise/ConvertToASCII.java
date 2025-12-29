@@ -3,8 +3,9 @@ public class ConvertToASCII {
         String letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
         convertString(letters);
     }
-    public static void convertString(String str){
-        for(int i =0; i<str.length(); i++){
+
+    public static void convertString(String str) {
+        for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
             int ascii = ch;
 
