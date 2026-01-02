@@ -1,10 +1,17 @@
 public class MaximumandMinimumOccurringCharacters {
     public static void main(String[] args) {
-        String str = "qqqqaaabb";
-        find(str);
+        find("");
+         find("a");
+          find("aaaa");
+        find("aabbcc");
+        find("qqqqaaabb");
     }
 
     public static void find(String s) {
+        if(s.length()==0){
+            System.out.println("string is empty");
+            return;
+        }
         char[] freq = new char[256];
 
         for (int i = 0; i < s.length(); i++) {
@@ -28,8 +35,9 @@ public class MaximumandMinimumOccurringCharacters {
             }
         }
 
-        System.out.println("max char: " + maxChar);
+        System.out.println("max char: " + maxChar+ " (" + max + ")");
 
-        System.out.println("min char: " + minChar);
+        System.out.println("min char: " + minChar+ " (" + min + ")");
+        System.out.println("--------------");
     }
 }
