@@ -7,29 +7,28 @@ public class ContainAllLetters {
         System.out.println(ifConains(s1));
 
     }
-    public static boolean ifConains(String s){
+
+    public static boolean ifConains(String s) {
         boolean seen[] = new boolean[26];
-       s = s.toLowerCase();
+        s = s.toLowerCase();
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
 
-            if(isBetweenAToZ(ch)){
-                seen[ch -'a'] = true;
+            if (isBetweenAToZ(ch)) {
+                seen[ch - 'a'] = true;
             }
         }
 
         for (int i = 0; i < 26; i++) {
-            if(!seen[i]){
+            if (!seen[i]) {
                 return false;
             }
         }
-
-        
         return true;
-
     }
+
     public static boolean isBetweenAToZ(char ch) {
-    return ch >= 'a' && ch <= 'z';
-}
+        return ch >= 'a' && ch <= 'z';
+    }
 
 }
