@@ -20,13 +20,9 @@ public class PrintSubstring {
     //optimized
     public static void substring2(String s) {
         for (int i = 0; i < s.length(); i++) {
-            for (int j = i; j < s.length(); j++) {
-                
-                    System.out.println(s.substring(i, j+1));
-                
-
+            for (int j = i; j < s.length(); j++) {                
+                    System.out.println(s.substring(i, j+1));                
             }
-
         }
     }
 }
