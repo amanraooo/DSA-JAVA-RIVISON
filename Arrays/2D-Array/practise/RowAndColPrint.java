@@ -19,6 +19,7 @@ public class RowAndColPrint {
             System.out.println();
         }
     }
+
     public static void colPrint(int mat[][]) {
         for (int i = 0; i < mat[0].length; i++) {
             for (int j = 0; j < mat.length; j++) {
