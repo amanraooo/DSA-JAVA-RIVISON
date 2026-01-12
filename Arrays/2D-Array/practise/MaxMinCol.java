@@ -7,6 +7,7 @@ public class MaxMinCol {
                 { 7, 888, 9 }
         };
         maxEleCol(mat);
+        System.out.println("----");
         minEleCol(mat);
     }
 
