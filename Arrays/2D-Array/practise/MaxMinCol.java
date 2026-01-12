@@ -9,6 +9,7 @@ public class MaxMinCol {
         maxEleCol(mat);
         minEleCol(mat);
     }
+
     public static void maxEleCol(int mat[][]) {
         for (int i = 0; i < mat[0].length; i++) {
             int max = Integer.MIN_VALUE;
