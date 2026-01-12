@@ -6,7 +6,7 @@ public class SumOfRowAndCol {
                 { 4, 5, 6 },
                 { 7, 8, 9 }
         };
-        //rowsSum(mat);
+        rowsSum(mat);
         colsSum(mat);
     }
 
@@ -23,6 +23,7 @@ public class SumOfRowAndCol {
             System.out.println();
         }
     }
+
     public static void colsSum(int mat[][]) {
         for (int i = 0; i < mat[0].length; i++) {
             int sum = 0;
