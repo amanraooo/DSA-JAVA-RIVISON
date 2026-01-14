@@ -12,9 +12,25 @@ public class SymmetricMat {
         };
         System.out.println(isSymmetric(mat1));
         System.out.println(isSymmetric(mat2));
+        
+        System.out.println(isSymmetric2(mat1));
+        System.out.println(isSymmetric2(mat2));
 
     }
 
+    //optimized :without extra space
+    public static boolean isSymmetric2(int mat[][]) {
+        
+        for (int i = 0; i < mat.length; i++) {
+            for (int j = i+1; j < mat[0].length; j++) {
+                if (mat[i][j] !=mat[j][i]) {
+                    return false;
+                }
+            }
+        }
+        return true;
+
+    }
     public static boolean isSymmetric(int mat[][]) {
         int transposeMat[][] = transpose(mat);
 
