@@ -12,21 +12,21 @@ public class InverseMatrix {
         findInverse(mat2);
 
     }
-    public static void findInverse(int mat[][]){
+
+    public static void findInverse(int mat[][]) {
         int a = mat[0][0];
         int b = mat[0][1];
         int c = mat[1][0];
         int d = mat[1][1];
 
-        int determinant = (a*d)-(b*c);
+        int determinant = (a * d) - (b * c);
 
-        if(determinant==0){
+        if (determinant == 0) {
             System.out.println("Inverse is not possible");
             return;
         }
-        System.out.println((double)d/determinant+" "+(double)-b/determinant);
-        System.out.println((double)-c/determinant+" "+(double)a/determinant);
-
+        System.out.println((double) d / determinant + " " + (double) -b / determinant);
+        System.out.println((double) -c / determinant + " " + (double) a / determinant);
 
     }
 }
