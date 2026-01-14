@@ -1,25 +1,24 @@
 public class SparseMatrix {
     public static void main(String[] args) {
-        int mat[][]={
-           { 0  ,0,  3},
-           {0  ,0,  0},
-            {5  ,0,  0}
+        int mat[][] = {
+                { 0, 0, 3 },
+                { 0, 0, 0 },
+                { 5, 0, 0 }
         };
-        int mat2[][]={
-           { 1  ,0,  3},
-           {1  ,0,  1},
-            {5  ,1,  0}
+        int mat2[][] = {
+                { 1, 0, 3 },
+                { 1, 0, 1 },
+                { 5, 1, 0 }
         };
 
-        int mat3[][]={
-           { 0  ,1},
-           {0  ,2}
-            
+        int mat3[][] = {
+                { 0, 1 },
+                { 0, 2 }
+
         };
         System.out.println(isSparseMatrix(mat));
         System.out.println(isSparseMatrix(mat2));
         System.out.println(isSparseMatrix(mat3));
-
 
     }
 
