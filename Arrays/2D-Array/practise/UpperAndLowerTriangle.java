@@ -7,12 +7,13 @@ public class UpperAndLowerTriangle {
         };
         upperTriangle(mat);
     }
-    public static void upperTriangle(int mat[][]){
+
+    public static void upperTriangle(int mat[][]) {
         for (int i = 0; i < mat.length; i++) {
             for (int j = 0; j < mat[0].length; j++) {
-                if(j>=i){
-                    System.out.print(mat[i][j]+" ");
-                }else{
+                if (j >= i) {
+                    System.out.print(mat[i][j] + " ");
+                } else {
                     System.out.print("  ");
                 }
             }
