@@ -8,7 +8,6 @@ public class SortMatrix {
                 { 6, 2, 7 }
         };
         sort(mat);
-        display(mat);
     }
 
     public static void sort(int mat[][]) {
@@ -31,6 +30,8 @@ public class SortMatrix {
                 mat[i][j] = arr[k++];
             }
         }
+
+        display(mat);
 
     }
 
