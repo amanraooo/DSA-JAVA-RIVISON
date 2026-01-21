@@ -10,15 +10,15 @@ public class MajorityElement {
         int vote_Count = 0;
         int candidate = 0;
         for (int i = 0; i < nums.length; i++) {
-            int curr_num = nums[i];
+            int curr_name = nums[i];
 
-            if (vote_Count == 0) {
-                candidate = curr_num;
+            if(vote_Count==0){
+                candidate=curr_name;
             }
-            if (curr_num != candidate) {
+            if(curr_name!=candidate){
                 vote_Count--;
-
-            } else {
+            }
+            else{
                 vote_Count++;
             }
         }
