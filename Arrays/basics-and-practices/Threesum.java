@@ -9,9 +9,8 @@ public class Threesum {
         // ThreeSum(arr, 12);
         int arr2[] = { -1, 0, 1, 2, -1, -4 };
         // ThreeSum(arr2, 0);
-        //System.out.println(threeSum(arr2));
+        // System.out.println(threeSum(arr2));
         System.out.println(prac(arr2, 0));
-
 
     }
 
@@ -86,36 +85,34 @@ public class Threesum {
         return result;
     }
 
-    public static List<List<Integer>> prac(int[]nums, int target){
+    public static List<List<Integer>> prac(int[] nums, int target) {
         List<List<Integer>> result = new ArrayList<>();
         Arrays.sort(nums);
 
-        for (int anchor = 0; anchor < nums.length-2; anchor++) {
+        for (int anchor = 0; anchor < nums.length - 2; anchor++) {
             if (anchor > 0 && nums[anchor] == nums[anchor - 1])
                 continue;
 
-            int l = anchor+1;
-            int h = nums.length-1;
+            int l = anchor + 1;
+            int h = nums.length - 1;
 
-            while(l<h){
-                int sum = nums[anchor]+ nums[l]+nums[h];
-                if(sum==target){
-                    result.add(Arrays.asList(nums[anchor], nums[l],nums[h]));
+            while (l < h) {
+                int sum = nums[anchor] + nums[l] + nums[h];
+                if (sum == target) {
+                    result.add(Arrays.asList(nums[anchor], nums[l], nums[h]));
 
                     l++;
                     h--;
 
-                    while (l<h && nums[l]==nums[l-1]) {
+                    while (l < h && nums[l] == nums[l - 1]) {
                         l++;
                     }
-                    while (h>l && nums[h]==nums[h+1]) {
+                    while (h > l && nums[h] == nums[h + 1]) {
                         h--;
                     }
-                }
-                else if(sum<target){
+                } else if (sum < target) {
                     l++;
-                }
-                else{
+                } else {
                     h--;
                 }
             }
