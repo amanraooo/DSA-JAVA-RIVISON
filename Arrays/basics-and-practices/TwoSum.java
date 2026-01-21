@@ -5,6 +5,9 @@ public class TwoSum {
         int target = 33;
         System.out.println(Tsum(arr,target));
 
+         int arr2[] ={2,6,7,8,10};
+        int target2 = 17;
+        System.out.println(Tsum(arr2,target2));
     }
     public static boolean Tsum(int arr[], int target){
         int l =0 ;
