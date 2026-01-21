@@ -12,13 +12,12 @@ public class MajorityElement {
         for (int i = 0; i < nums.length; i++) {
             int curr_name = nums[i];
 
-            if(vote_Count==0){
-                candidate=curr_name;
+            if (vote_Count == 0) {
+                candidate = curr_name;
             }
-            if(curr_name!=candidate){
+            if (curr_name != candidate) {
                 vote_Count--;
-            }
-            else{
+            } else {
                 vote_Count++;
             }
         }
