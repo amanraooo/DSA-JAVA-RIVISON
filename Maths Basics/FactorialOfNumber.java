@@ -5,10 +5,11 @@ public class FactorialOfNumber {
         System.out.println(factorial(4));
 
     }
-    public static int factorial(int n){
+
+    public static int factorial(int n) {
         int fact = 1;
-        for(int i= n ;i>0; i--  ){
-            fact = fact *i;
+        for (int i = n; i > 0; i--) {
+            fact = fact * i;
         }
         return fact;
     }
