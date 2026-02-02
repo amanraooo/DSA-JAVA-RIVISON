@@ -5,7 +5,8 @@ public class primeNumber {
         System.out.println(isPrime(7));
         System.out.println(isPrime(9));
         System.out.println(isPrime(1));
-printPrimes(100);
+
+        printPrimes(100);
     }
 
     public static boolean isPrime(int n) {
@@ -20,10 +21,11 @@ printPrimes(100);
         return true;
 
     }
-    public static void printPrimes(int n ){
+
+    public static void printPrimes(int n) {
         for (int i = 2; i <= n; i++) {
-            if(isPrime(i)){
-                System.out.println(i + " ");
+            if (isPrime(i)) {
+                System.out.print(i + " ");
             }
         }
     }
