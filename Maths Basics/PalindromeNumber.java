@@ -5,15 +5,16 @@ public class PalindromeNumber {
         System.out.println(isPalindrome(1331));
         System.out.println(isPalindrome(123));
 
-
     }
-    public static boolean isPalindrome(int n ){
+
+    public static boolean isPalindrome(int n) {
         int reversed = reverse(n);
-        if(n == reversed){
+        if (n == reversed) {
             return true;
         }
         return false;
     }
+
     public static int reverse(int n) {
         int reversed = 0;
         while (n > 0) {
