@@ -24,4 +24,13 @@ public class PalindromeNumber {
         }
         return reversed;
     }
+    public static int reverse2(int n) {
+        int reversed = 0;
+        while (n > 0) {
+            int lastDigit = n % 10;
+            reversed = reversed * 10 + lastDigit;
+            n = n / 10;
+        }
+        return reversed;
+    }
 }
