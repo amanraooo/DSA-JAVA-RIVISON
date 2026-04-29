@@ -3,14 +3,16 @@ public class ContainAllLetters {
         String s = "The quick brown fox jumps over the lazy dog";
         String s1 = "Hello world";
 
-        System.out.println(ifConains(s));
-        System.out.println(ifConains(s1));
+        System.out.println(ifContains(s));
+        System.out.println(ifContains(s1));
 
     }
 
-    public static boolean ifConains(String s) {
+    public static boolean ifContains(String s) {
         boolean seen[] = new boolean[26];
+
         s = s.toLowerCase();
+        
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
 
