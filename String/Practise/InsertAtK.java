@@ -29,16 +29,19 @@ public class InsertAtK {
     }
 
     public static String insertAtK(String s, char c, int K) {
+        
+            if (K == s.length()) {
+                insertAtLast(s, c);
+            }
+
         StringBuilder result = new StringBuilder();
+        
         for (int i = 0; i < s.length(); i++) {
             if (i == K) {
                 result.append(c);
             }
             result.append(s.charAt(i));
 
-            if (K == s.length()) {
-                insertAtLast(s, c);
-            }
         }
 
         return result.toString();

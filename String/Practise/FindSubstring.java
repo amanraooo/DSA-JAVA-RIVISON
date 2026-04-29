@@ -1,6 +1,6 @@
 public class FindSubstring {
     public static void main(String[] args) {
-        String haystack = "sadbutsad", needle = "sad";
+        String haystack = "butsadsad", needle = "sad";
         String haystack1 = "leetcode", needle1 = "leeto";
 
         System.out.println(find(haystack, needle));
