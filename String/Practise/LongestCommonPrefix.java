@@ -22,7 +22,7 @@ public class LongestCommonPrefix {
             char ch = strs[0].charAt(i);
 
             for (int j = 1; j < strs.length; j++) {
-                if (strs[j].charAt(i) != ch || i >= strs.length) {
+                if (strs[j].charAt(i) != ch || i >= strs[j].length()) {
                     return ans.toString();
                 }
             }
