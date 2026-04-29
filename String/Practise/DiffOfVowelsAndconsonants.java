@@ -5,9 +5,13 @@ public class DiffOfVowelsAndconsonants {
         String str = "Hi Aman! 123";
         String str2 = "aman";
         String str3 = "aeiouAEIOU";
+        String str4 = "";
+
         difference(str);
         difference(str2);
         difference(str3);
+        difference(str4);
+
 
     }
 
@@ -18,17 +22,20 @@ public class DiffOfVowelsAndconsonants {
             return;
         }
 
-        Set<Character> vowelsSet = Set.of('a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U');
-
+        
         int vowelsCount = 0;
         int consonantsCount = 0;
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
 
             if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) {
-                if (vowelsSet.contains(ch)) {
+
+                ch = Character.toLowerCase(ch);
+
+                if(ch=='a'|| ch=='e'|| ch=='i'||ch=='o'||ch=='u'){
                     vowelsCount++;
-                } else {
+                }
+                else {
                     consonantsCount++;
                 }
             } else {
