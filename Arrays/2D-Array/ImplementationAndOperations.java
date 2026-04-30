@@ -34,8 +34,8 @@ public class ImplementationAndOperations {
         System.out.println("Printing 2D array");
         print2DArray(arr, arr.length, arr[0].length);
 
-        // System.out.println("Printing column wise 2D array");
-        // ColumnWisePrint(arr, arr.length, arr[0].length);
+        System.out.println("Printing column wise 2D array");
+        ColumnWisePrint(arr, arr.length, arr[0].length);
 
         System.out.println("diagonally print ");
         diagonallyPrint(arr, arr.length, arr[0].length);
