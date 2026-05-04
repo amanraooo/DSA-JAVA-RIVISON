@@ -7,7 +7,7 @@ public class Merge_2_2D_Arrays_by_summing_values {
         for(int i = 0; i<nums1.length; i++){
             hash[nums1[i][0]]++;
         }
-        for(int i = 0; i<nums1.length; i++){
+        for(int i = 0; i<nums2.length; i++){
             hash[nums2[i][0]]++;
         }
 
@@ -64,7 +64,7 @@ public class Merge_2_2D_Arrays_by_summing_values {
                 j++;
                 r++;
             }
-            
+
             return result;
 
         }
