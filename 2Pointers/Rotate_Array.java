@@ -6,7 +6,7 @@ public class Rotate_Array {
     }
 
     public static void rotateOptimized(int arr[], int k) {
-
+        k = k % arr.length;
         reverseArray(arr, 0, arr.length - 1);
         reverseArray(arr, 0, k - 1);
         reverseArray(arr, k, arr.length - 1);
@@ -28,6 +28,7 @@ public class Rotate_Array {
 
     // brute force
     public static void rotateBruteForce(int arr[], int k) {
+        k = k % arr.length;
 
         for (int i = 1; i <= k; i++) {
 
