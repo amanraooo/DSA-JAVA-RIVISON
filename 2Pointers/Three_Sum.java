@@ -13,7 +13,7 @@ public class Three_Sum {
 
     public static List<List<Integer>> threeSum(int[] nums) {
 
-        List<List<Integer>> result = new ArrayList<>();
+        List<List<Integer>> ans = new ArrayList<>();
 
         Arrays.sort(nums);
 
@@ -32,7 +32,7 @@ public class Three_Sum {
 
                 if (sum == 0) {
 
-                    result.add(Arrays.asList(nums[anchor], nums[l], nums[h]));
+                    ans.add(Arrays.asList(nums[anchor], nums[l], nums[h]));
 
                     l++;
                     h--;
@@ -48,6 +48,6 @@ public class Three_Sum {
             }
         }
 
-        return result;
+        return ans;
     }
 }
