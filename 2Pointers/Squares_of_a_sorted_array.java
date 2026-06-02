@@ -5,16 +5,18 @@ import java.util.List;
 public class Squares_of_a_sorted_array {
 
     public static void main(String[] args) {
-        int nums[]={-4,-1,0,3,10};
+        int nums[] = { -4, -1, 0, 3, 10 };
 
         display(sortedSquares(nums));
 
     }
+
     public static void display(int arr[]) {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
     }
+
     public static int[] sortedSquares(int[] arr) {
 
         List<Integer> negNums = new ArrayList<>();
