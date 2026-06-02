@@ -6,7 +6,11 @@ public class Merge_sorted_Arrays {
         int n = 3;
         int nums2[] = { 2, 5, 6 };
 
-        merge(nums1, m, nums2, n);
+        //merge(nums1, m, nums2, n);
+
+        int n1[]={1,3,5};
+        int n2[]={2,4,6,8,10};
+        display(merge2(n1,n2));
     }
 
     public static void display(int arr[]) {
@@ -38,6 +42,43 @@ public class Merge_sorted_Arrays {
         }
 
         display(arr1);
+
+    }
+
+        public static  int[] merge2(int arr1[], int arr2[]) {
+            int  m = arr1.length;
+            int n = arr2.length; 
+        //int idx = (m + n) - 1;
+        int res[] = new int [m+n];
+        int i = 0;
+        int j = 0;
+        int k =0;
+
+        while (i < m && j < n) {
+            if (arr1[i] < arr2[j]) {
+                res[k] = arr1[i];
+                i++;
+                k++;
+            } else {
+                res[k] = arr2[j];
+                j++;
+                k++;
+            }
+            
+        }
+
+        while (i < m) {
+            res[k] = arr1[i];
+            i++;
+            k++;
+        }
+        while (j < n) {
+            res[k] = arr2[j];
+            j++;
+            k++;
+        }
+
+       return res;
 
     }
 }
