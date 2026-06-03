@@ -2,9 +2,11 @@ import java.util.Arrays;
 
 public class Three_sum_closest {
     public static void main(String[] args) {
-        int nums[]={-1,2,1,-4}; int target =1;
-        System.out.println(threeSumClosest(nums,target));
+        int nums[] = { -1, 2, 1, -4 };
+        int target = 1;
+        System.out.println(threeSumClosest(nums, target));
     }
+
     public static int threeSumClosest(int[] nums, int target) {
         Arrays.sort(nums);
 
@@ -38,5 +40,5 @@ public class Three_sum_closest {
         }
 
         return resSum;
-    } 
+    }
 }
